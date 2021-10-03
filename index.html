@@ -1,0 +1,71 @@
+<!DOCTYPE=html>
+    <html>
+
+    <head>
+        <title>Course Catalog</title>
+
+        <!-- Add bootstrap and custom style sheets here -->
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+	<div> 
+		<img id="logo-image" src="images/geneva_logo.png" alt="Geneva Logo">
+        <h1>Geneva Course Catalog</h1>
+	</div>
+	<div>
+		<table> </table>
+	</div>
+	
+	<body>
+        <!-- Add bootstrap and custom JavaScript files here -->
+        <script type="text/javascript" src="js/main.js"></script>		
+    </body>
+	
+    <script> 
+		
+		//let editedArray = deleteRows(classes); 
+		
+		let table = document.querySelector("table");
+		//let data = Object.keys(classes[0]);
+		generateTable(table, classes); 
+		generateTableHeader(table, data);
+		
+	
+	function generateTableHeader(table, data) {
+		let thead = table.createTHead();
+		let row = thead.insertRow();
+		for (let key of data) {
+			let th = document.createElement("th");
+			let text = document.createTextNode(key);
+			th.appendChild(text);
+			row.appendChild(th);
+		}
+		
+
+	}
+		
+		function generateTable(table, data) {
+			for (let part of data) {
+            let row = table.insertRow();
+			
+            for (key in part) {
+                let cell = row.insertCell();
+                let text = document.createTextNode(part[key]);
+                cell.appendChild(text);
+            }
+        }
+	}
+		
+		function deleteRows(classes) {
+			courses.forEach(function (part) {
+				delete part.faculty; 
+			}
+			return classes; 
+		}
+		
+		
+	</script> 
+	
+	
+	
+
+    </html>
