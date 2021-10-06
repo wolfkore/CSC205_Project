@@ -1,2 +1,2 @@
-# CSC205_Project-
+# CSC205_Project
 A javascript webpage for CSC205 
