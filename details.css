@@ -1,0 +1,112 @@
+body {
+	font-family: 'Lato', Helvetica, sans-serif;
+	font-size: 15px;
+	
+}
+
+/** {
+	border-style: solid;
+}*/
+
+#necessaryId, #courseTitle {
+	padding-bottom: 5px;
+	font-size: 20px;
+	
+}
+
+#dataP, #timeP, #creditsP {
+	border-radius: 25px;
+    border: 2px solid goldenrod;
+    padding: 20px; 
+    width: 90%;	
+}
+
+#genevaLogo {
+	float: right;
+}
+
+.row {
+	display: flex; 
+}
+
+.column {
+	flex: 50%;
+	padding: 16px;
+	height: 250px;
+}
+
+@media screen and (max-width: 715px) {
+	.row {
+		width: 100%; 
+	}
+	
+	#timeP {
+		line-height: 170%;
+	}
+	
+	#nav {
+		width: 300px;
+	}
+}
+
+
+.variable {
+	height: 100%;
+	font-size: 16px;
+	line-height: 200%;
+}
+
+#creditsP {
+	height: 57%;
+	line-height: 200%;
+}
+
+#necessaryId {
+	position: absolute;
+	width: 97%;
+	top: 5px;
+	left: 2%;
+}
+
+#nav {
+	position:absolute;
+	left: 28%;
+	margin-right: -50%; 
+	top: 420px;	
+	width: 35%;	
+}
+
+#nav {
+	border-collapse: collapse;
+}
+
+#nav tr {
+	border: none;
+}
+
+#nav th {
+	border-right: solid 1px gray;
+	border-left: solid 1px gray;
+}
+
+.navBar {
+	color: goldenrod; 
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: DimGrey;
+  color: goldenrod;
+  text-align: center;
+}
+
+#font {
+	font-size: 20px;
+	
+}
